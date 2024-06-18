@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+    <!-- roboto font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="calculator">
+        <div class="calculator__header">
+            <p>Theme:</p>
+            <div class="themes-box">
+                <label for="theme-1">1</label>
+                <label for="theme-2">2</label>
+                <label for="theme-3">3</label>
+                <div class="dot-container">
+                    <input type="radio" name="theme" id="theme-1" checked onchange="setTheme('theme-1')">
+                    <input type="radio" name="theme" id="theme-2" onchange="setTheme('theme-2')">
+                    <input type="radio" name="theme" id="theme-3" onchange="setTheme('theme-3')">
+                    <span class="dot"></span>
+                </div>
+            </div>
+        </div>
+        <div class="calculator__display">
+            <p class="upper-display"></p>
+            <p class="lower-display"></p>
+        </div>
+        <div class="calculator__buttons">
+            <button type="button" class="number">7</button>
+            <button type="button" class="number">8</button>
+            <button type="button" class="number">9</button>
+            <button type="button" class="operator focus-effect">+</button>
+            <button type="button" class="number">4</button>
+            <button type="button" class="number">5</button>
+            <button type="button" class="number">6</button>
+            <button type="button" class="operator focus-effect">-</button>
+            <button type="button" class="number">1</button>
+            <button type="button" class="number">2</button>
+            <button type="button" class="number">3</button>
+            <button type="button" class="operator focus-effect">*</button>
+            <button type="button" class="operator">DEL</button>
+            <button type="button" class="number">0</button>
+            <button type="button" class="number">.</button>
+            <button type="button" class="operator focus-effect">/</button>
+            <button type="button" class="operator reset">RESET</button>
+            <button type="button" class="operator result">=</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
